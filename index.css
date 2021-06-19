@@ -30,7 +30,7 @@
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
-    padding: 8px 4px 0;
+    padding: 16px 4px 0;
 }
 
 .icon {
@@ -141,16 +141,21 @@
 
     .content {
         width: 90%;
-        padding: 16px 16px 80px;
+        padding: 24px 16px 80px;
         overflow: hidden;
     }
 
     .icon {
         filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-        width: 20px;
+        /* width: 20px; */
+        margin-right: 12px;
     }
     .fact {
         min-height: 0;
+    }
+
+    .source {
+        max-width: 70%;
     }
     .button-container {
         position: fixed;
@@ -171,6 +176,8 @@
     }
     .button {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 30px;
+        margin-right: 20px;
     }
 
     .credit {
