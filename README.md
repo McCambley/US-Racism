@@ -2,6 +2,8 @@
 
 ## On the first federally recognized Juneteenth, it seemed an appropriate to recognize the ways in which Institutional Racism affects the lives of black americans on a daily basis.
 
+## [View Project Live](https://mccambley.github.io/US-Racism/)
+
 ---
 
 ## Credit
