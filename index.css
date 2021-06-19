@@ -18,6 +18,31 @@
     color: #e0e2db;
     box-sizing: border-box;
     position: relative;
+    min-width: 300px;
+    /* max-width: 1120px; */
+}
+
+.links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 8px 4px 0;
+}
+
+.icon {
+    width: 28px;
+    margin-right: 4px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+
+.icon:hover {
+    opacity: 1;
 }
 
 .page * {
@@ -27,14 +52,17 @@
 .content {
     padding: 40px;
     width: 80%;
+    box-sizing: border-box;
+    max-width: 1024px;
 }
 
 .fact {
     margin: 0;
     font-size: 60px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     line-height: 60px;
-    min-height: 300px;
+    min-height: 600px;
+    /* min-height: 480px; */
 }
 
 .source {
@@ -80,6 +108,7 @@
     padding: 12px;
     min-width: 124px;
     transition: background-color 0.1s ease;
+    z-index: 3;
 }
 
 .button:last-child {
@@ -91,9 +120,37 @@
     color: #2e3532;
 }
 
-@media (max-width: 760px) {
+.credit {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+    margin: 0;
+    z-index: 0;
+}
+
+.credit:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
     .page {
         justify-content: flex-start;
+    }
+
+    .content {
+        width: 90%;
+        padding: 16px 16px 80px;
+        overflow: hidden;
+    }
+
+    .icon {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        width: 20px;
+    }
+    .fact {
+        min-height: 0;
     }
     .button-container {
         position: fixed;
@@ -101,8 +158,34 @@
         bottom: 0;
         left: 0;
         /* background-color: rgba(0, 0, 0, 0.1); */
+        background: linear-gradient(
+            180deg,
+            rgba(139, 38, 53, 0) 0%,
+            rgba(139, 38, 53, 1) 100%
+        );
         display: flex;
         justify-content: center;
         padding: 16px;
+        padding-top: 36px;
+        z-index: 1;
+    }
+    .button {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .credit {
+        position: relative;
+        inset: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+    }
+
+    .fact {
+        font-size: 48px;
+        line-height: 48px;
     }
 }

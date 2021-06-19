@@ -335,6 +335,7 @@ const sourceElement = document.querySelector(".source");
 
 function renderFact() {
     const factNumber = Math.floor(Math.random() * examples.length);
+    // const factNumber = 41;
     const fact = examples[factNumber];
     factElement.textContent = fact.fact;
     sourceElement.textContent = fact.source;
