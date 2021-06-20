@@ -45,10 +45,6 @@
     opacity: 1;
 }
 
-.page * {
-    /* border: 1px solid gray; */
-}
-
 .content {
     padding: 40px;
     width: 80%;
@@ -61,7 +57,7 @@
     font-size: 60px;
     margin-bottom: 12px;
     line-height: 60px;
-    min-height: 600px;
+    /* min-height: 600px; */
     /* min-height: 480px; */
 }
 
