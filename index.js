@@ -341,9 +341,17 @@ function renderFact() {
     sourceElement.textContent = fact.source;
     sourceElement.href = fact.link;
     buttonLink.href = fact.link;
-    console.log(fact);
+}
+
+function loadPage() {
+    factElement.textContent =
+        "Learn facts about Systemic Racism in the United States";
+    sourceElement.textContent = "#BlackLivesMatter";
+    sourceElement.href = "https://blacklivesmatter.com/";
+    buttonLink.href = "https://curiousrefuge.com/blog/systemic-racism";
 }
 
 renderFact();
+loadPage();
 
 nextButton.addEventListener("click", renderFact);

@@ -22,6 +22,12 @@
     /* max-width: 1120px; */
 }
 
+.thumbnail {
+    width: 1px;
+    position: absolute;
+    left: -1px;
+}
+
 .links {
     position: absolute;
     top: 0;
