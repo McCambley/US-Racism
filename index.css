@@ -1,208 +1,204 @@
 @import url(./vendor/normalize.css);
 
-@import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 /* font-family: 'Bentham', serif; */
-@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
 /* font-family: 'Benne', serif; */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
 /* font-family: 'Raleway', sans-serif; */
 
 .page {
-    font-family: "Bentham", serif;
-    background-color: #8b2635;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #e0e2db;
-    box-sizing: border-box;
-    position: relative;
-    min-width: 300px;
-    /* max-width: 1120px; */
+  font-family: 'Bentham', serif;
+  background-color: #8b2635;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #e0e2db;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 300px;
+  /* max-width: 1120px; */
 }
 
 .thumbnail {
-    width: 1px;
-    position: absolute;
-    left: -1px;
+  width: 1px;
+  position: absolute;
+  left: -1px;
 }
 
 .links {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    padding: 16px 4px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 16px 4px 0;
 }
 
 .icon {
-    width: 28px;
-    margin-right: 4px;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: all 0.2s ease;
+  width: 28px;
+  margin-right: 4px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.2s ease;
 }
 
 .icon:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .content {
-    padding: 40px;
-    width: 80%;
-    box-sizing: border-box;
-    max-width: 1024px;
+  padding: 40px;
+  width: 80%;
+  box-sizing: border-box;
+  max-width: 1024px;
 }
 
 .fact {
-    margin: 0;
-    font-size: 60px;
-    margin-bottom: 12px;
-    line-height: 60px;
-    /* min-height: 600px; */
-    /* min-height: 480px; */
+  margin: 0;
+  font-size: 60px;
+  margin-bottom: 12px;
+  line-height: 60px;
+  /* min-height: 600px; */
+  /* min-height: 480px; */
 }
 
 .source {
-    margin: 0;
-    font-family: "Benne", serif;
-    color: inherit;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 16px;
-    transition: all 0.3s ease;
-    position: relative;
+  margin: 0;
+  font-family: 'Benne', serif;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .source::after {
-    content: "";
-    height: 1px;
-    width: 0;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: all 0.3s ease;
+  content: '';
+  height: 1px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease;
 }
 
 .source:hover::after {
-    width: 100%;
-    opacity: 1;
+  width: 100%;
+  opacity: 1;
 }
 
 .button-container {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .button {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    cursor: pointer;
-    color: #fff;
-    background-color: #2e3532;
-    border: none;
-    border-radius: 10px;
-    margin-right: 16px;
-    padding: 12px;
-    min-width: 124px;
-    transition: background-color 0.1s ease;
-    z-index: 3;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2e3532;
+  border: none;
+  border-radius: 10px;
+  margin-right: 16px;
+  padding: 12px 20px;
+  min-width: 124px;
+  transition: background-color 0.1s ease;
+  z-index: 3;
 }
 
 .button:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .button:hover {
-    background-color: #e0e2db;
-    color: #2e3532;
+  background-color: #e0e2db;
+  color: #2e3532;
 }
 
 .credit {
-    position: absolute;
-    bottom: 0;
-    right: 16px;
-    opacity: 0.3;
-    transition: opacity 0.3s ease;
-    margin: 0;
-    z-index: 0;
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+  margin: 0;
+  z-index: 0;
 }
 
 .credit:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
-    .page {
-        justify-content: flex-start;
-    }
+  .page {
+    justify-content: flex-start;
+  }
 
-    .content {
-        width: 90%;
-        padding: 24px 16px 80px;
-        overflow: hidden;
-    }
+  .content {
+    width: 90%;
+    padding: 24px 16px 80px;
+    overflow: hidden;
+  }
 
-    .icon {
-        /* filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); */
-        /* width: 20px; */
-        margin-right: 12px;
-    }
-    .fact {
-        min-height: 0;
-    }
+  .icon {
+    /* filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); */
+    /* width: 20px; */
+    margin-right: 12px;
+  }
+  .fact {
+    min-height: 0;
+  }
 
-    .source {
-        max-width: 70%;
-    }
-    .button-container {
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        /* background-color: rgba(0, 0, 0, 0.1); */
-        background: linear-gradient(
-            180deg,
-            rgba(139, 38, 53, 0) 0%,
-            rgba(139, 38, 53, 1) 100%
-        );
-        display: flex;
-        justify-content: center;
-        padding: 16px;
-        padding-top: 36px;
-        z-index: 1;
-    }
-    .button {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        border-radius: 30px;
-        margin-right: 20px;
-    }
+  .source {
+    max-width: 70%;
+  }
+  .button-container {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background: linear-gradient(180deg, rgba(139, 38, 53, 0) 0%, rgba(139, 38, 53, 1) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    padding-top: 36px;
+    z-index: 1;
+  }
+  .button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    margin-right: 20px;
+  }
 
-    .credit {
-        position: relative;
-        inset: 0;
-    }
+  .credit {
+    position: relative;
+    inset: 0;
+  }
 }
 
 @media (max-width: 480px) {
-    .content {
-        width: 100%;
-    }
+  .content {
+    width: 100%;
+  }
 
-    .fact {
-        font-size: 52px;
-        line-height: 48px;
-    }
+  .fact {
+    font-size: 52px;
+    line-height: 48px;
+  }
 
-    .credit {
-        display: none;
-    }
+  .credit {
+    display: none;
+  }
 
-    .source {
-        min-height: 40px;
-    }
+  .source {
+    min-height: 40px;
+  }
 }
