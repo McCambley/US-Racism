@@ -41,11 +41,11 @@ All facts displayed are pulled at random from `./index.js`. To add additional fa
 
 ### Desktop
 
-![Demonstration](./src/images/demo.gif)
+![Desktop](https://user-images.githubusercontent.com/74033573/145723563-8521675f-2e1a-4672-8e5f-a293dc09b61b.png)
 
 ### Mobile
 
-![Demonstration](./src/images/demo.png)
+![Mobile](https://user-images.githubusercontent.com/74033573/145723560-e8a9928d-b6aa-4b77-9b49-9f8f77433393.png)
 
 ---
 
