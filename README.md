@@ -1,4 +1,4 @@
-# [U.S. and Racism](https://mccambley.github.io/US-Racism/)
+# U.S. and Racism
 
 On the first federally recognized Juneteenth, it seemed an appropriate to recognize the ways in which Institutional Racism affects the lives of black americans on a daily basis.
 
